@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>ENIGMA</title>
+</head>
+
+<body>
+
+    <div id="preloader" class="preloader">
+        <img class="preloader__logo" src="img/preloader-logo.png" alt="ENIGMA">
+    </div>
+    <div class="header">
+        <div id="burger-header__top" class="burger-header__top">
+            <div class="burger-open">
+                <a id="burger-open-button"onclick="openBurger()"class="burger-open-button" ><img class="burger__img"
+                        src="img/burger.svg" alt="Меню"></a>
+            </div>
+            <div id="burger-close" class="burger-close " onclick="link()">
+                <a id="burger-close-button" class="burger-close-button" ><img class="burger__img"
+                        src="img/burger.svg" alt="Меню"></a>
+            </div>
+            <nav id="burger-menu" class="burger-menu">
+                <div id="menu__list-container" class="menu__list-container">
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__list-item-logo">
+                            <img class="burger-logo__img" src="img/logo.svg" alt="Логотип">
+                        </li>
+                        <li class="burger-menu__list-item">
+                            <a href="index.html" class="burger-menu__list-link" onclick="link()">Главная</a>
+                        </li>
+                        <li class="burger-menu__list-item">
+                            <a href="#will__you" class="burger-menu__list-link" onclick="link()" >Обязанности</a>
+                        </li>
+                        <li class="burger-menu__list-item">
+                            <a href="#fit" class="burger-menu__list-link" onclick="link()">Требования</a>
+                        </li>
+                        <li class="burger-menu__list-item">
+                            <a href="#how" class="burger-menu__list-link" onclick="link()" >Как это будет?</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header__top">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="index.html" class="menu__list-link">Главная</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#will__you" class="menu__list-link">Обязанности</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#fit" class="menu__list-link">Требования</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#how" class="menu__list-link">Как это будет?</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <div class="menu__list-link">Тюмень, ул. Софьи Ковалевской 6</div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__contant">
+            <div class="logo">
+                <img class="logo__img header-logo__img" src="img/logo.svg" alt="Логотип">
+            </div>
+            <h1 class="header__title ">ВАКАНСИИ В ENIGMA</h1>
+            <div class="header__text">Комфорт и конфиденциальность</div>
+            <button type="button" onclick="openForm()" class="button btn-outline-success button-interview-js">Оставить заявку</button>
+        </div>
+    </div>
+
+    <section class="job">
+        <div class="job-container">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип">
+            <h2 class="job__title">РАБОТА В ENIGMA</h2>
+
+            <div class="job__block">
+                <div class="job__block-item">
+                    <img class="job__block-img" src="img/job.svg" alt=" ">
+                    <p class="job__block-title">Большой заработок</p>
+                    <p class="job__block-text"> Работая в нашем клубе, вы будете получать <br>высокую зарплату и
+                        ежедневные выплаты</p>
+                </div>
+                <div class="job__block-item">
+                    <img class="job__block-img" src="img/job.svg" alt=" ">
+                    <p class="job__block-title">Конфиденциальность</p>
+                    <p class="job__block-text">Мы делаем всё для того, чтобы про вашу<br> работу в Enigma никто не узнал
+                    </p>
+                </div>
+                <div class="job__block-item">
+                    <img class="job__block-img" src="img/job.svg" alt=" ">
+                    <p class="job__block-title">Удобный график</p>
+                    <p class="job__block-text">Ты сможешь совмещать работу в Enigma с<br> другими планами, выбирая
+                        удобные смены
+                    </p>
+                </div>
+                <div class="job__block-item">
+                    <img class="job__block-img" src="img/job.svg" alt=" ">
+                    <p class="job__block-title">Обучение за наш счёт</p>
+                    <p class="job__block-text">Бесплатно проведем профессиональное <br> обучение, ваш уровень не важен
+                    </p>
+                </div>
+            </div>
+
+            <button type="button"onclick="openForm()"class="button btn-outline-success button-interview-js">Оставить заявку</button>
+        </div>
+    </section>
+
+    <section class="vacancies__fon-1">
+        
+            <img class="vacancies__block-img" src="img/vacancies-fon-1.jpg" alt=" ">
+        
+    </section>
+
+    <section id="will__you" class="will__you">
+        <div class="container">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип">
+            <h2 class="will__you-title">В ENIGMA ТЫ БУДЕШЬ:</h2>
+            <div class="will__you-item">
+                <p class="will__you-number">01</p>
+                <p class="will__you-text">Выполнять программы нашей студии</p>
+            </div>
+            <div class="will__you-item">
+                <p class="will__you-number">02</p>
+                <p class="will__you-text">Консультировать гостей по программам</p>
+            </div>
+            <div class="will__you-item">
+                <p class="will__you-number">03</p>
+                <p class="will__you-text">Через практику показывать гостям<br> достоинства той или иной программы</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fit" class="fit">
+        <div class="container">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип">
+            <h2 class="fit-title">ТЫ ПОДХОДИШЬ, ЕСЛИ</h2>
+
+            <div class="fit__block">
+                <div class="fit__block-item">
+                    <img class="fit__block-img" src="img/fit.svg" alt=" ">
+                    <p class="fit__block-title">У тебя приятная <br> внешность</p>
+                </div>
+                <div class="fit__block-item">
+                    <img class="fit__block-img" src="img/fit.svg" alt=" ">
+                    <p class="fit__block-title">Ты ответственная и <br>пунктуальная</p>
+                </div>
+                <div class="fit__block-item">
+                    <img class="fit__block-img" src="img/fit.svg" alt=" ">
+                    <p class="fit__block-title">Умеешь грамотно<br> излагать свои мысли</p>
+                </div>
+                <div class="fit__block-item">
+                    <img class="fit__block-img" src="img/fit.svg" alt=" ">
+                    <p class="fit__block-title">Ты уверенная и<br> коммуникабельная</p>
+                </div>
+            </div>
+
+            <button type="button" onclick="openForm()" class="button btn-outline-success button-interview-js">Оставить заявку</button>
+            <p class="fit-text">Опыт работы в сфере услуг и навыки <br> массажа будут большим плюсом</p>
+        </div>
+    </section>
+
+
+    <section id="how" class="how">
+        <div class="container">
+            <h2 class="how-title">КАК ЭТО БУДЕТ?</h2>
+            <div class="how__block">
+                <div class="how__block-item">
+                    <img class="how-img" src="img/how-1.svg" alt=" ">
+                    <p class="how-text">Собеседование</p>
+                </div>
+                <div class="how__block-item">
+                    <img class="how-img-next" src="img/how-next.svg" alt=" ">
+                </div>
+                <div class="how__block-item">
+                    <img class="how-img" src="img/how-2.svg" alt=" ">
+                    <p class="how-text">Обучение</p>
+                </div>
+                <div class="how__block-item how__block-item-next">
+                    <img class="how-img-next" src="img/how-next.svg" alt=" ">
+                </div>
+                <div class="how__block-item">
+                    <img class="how-img" src="img/how-3.svg" alt=" ">
+                    <p class="how-text">Первая смена</p>
+                </div>
+                <div class="how__block-item">
+                    <img class="how-img-next" src="img/how-next.svg" alt=" ">
+                </div>
+                <div class="how__block-item">
+                    <img class="how-img" src="img/how-4.svg" alt=" ">
+                    <p class="how-text">Заработок</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application">
+        <div class="container">
+            <h2 class="application-title">ЗАЯВКА НА<br> СОБЕСЕДОВАНИЕ</h2>
+            <p class="application-text">
+                Оставьте заявку и мы свяжемся<br> с Вами в течении 10 минут
+            </p>
+
+            <form action="">
+                <div  class="signUp-input-block">
+                    <input class="signUp-input application-signUp-input" type="text" placeholder="Имя">
+                    <input class="signUp-input application-signUp-input" type="text" placeholder="Телефон">
+                </div>
+                <button type="submit" class="button-signUp btn-outline-success button-interview-js">Оставить заявку</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <section class="vacancies__fon-2">
+            <img class="vacancies__block-img" src="img/vacancies-fon-2.jpg" alt=" ">
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer__menu">
+            <div class="footer__container">
+                <div class="footer__text">Тюмень, ул. Софьи Ковалевской 6</div>
+                <div class="footer__button">+7 (929) 260-74-78</div>
+                <a href="index.html" class="footer__link">Главная</a>
+                <div class="footer__massanger-1">
+                    <a href="#" class="footer__tg"> <img src="img/tg.svg" alt=""> </a>
+                </div>
+            </div>
+            <div class="footer__massanger">
+                <a href="#" class="footer__tg"> <img src="img/tg.svg" alt=""> </a>
+                
+            </div>
+        </div>
+
+
+        <div class="footer__menu-2">
+            <div class="footer__text">Тюмень, ул. Софьи Ковалевской 6</div>
+            <div class="footer__massanger-2">
+                <a href="#" class="footer__tg"> <img class="tg" src="img/tg.svg" alt=""> </a>
+            </div>
+            <button class="button btn-outline-success button-interview-js">Записаться</button>
+        </div>
+
+    </footer>
+
+    <div id="window-interview" class="window-interview" >
+        <div class="window-interview-fon " onclick="closeForm()"></div>
+        <div class="window-interview-block">
+            <a  class="btn cancel" onclick="closeForm()">
+            <img class="close" src="img/close.svg" alt=""></a>
+            <h2 class="window-interview-title">ЗАЯВКА НА СОБЕСЕДОВАНИЕ</h2>
+            <p class="window-interview-text">Оставьте заявку и мы свяжемся <br> с Вами в течении 10 минут</p>
+            <form action="#" class="form-container">
+                <div>
+                    <input class="signUp-input" type="text" placeholder="Имя" name="name" required>
+                    <input class="signUp-input" type="text" placeholder="Телефон" name="tel" required>
+                </div>
+                <button type="submit" class="button-signUp btn-outline-success button-interview-js">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
